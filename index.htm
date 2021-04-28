@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="topnav" id="myTopNav">
+            <a href="#home" onclick="hamburgerFunction()">Home</a>
+            <a href="#bread" onclick="hamburgerFunction()">Bread</a>
+            <a href="#story" onclick="hamburgerFunction()">Story</a>
+            <a href="#about" onclick="hamburgerFunction()">About</a>
+            <a href="#contact" onclick="hamburgerFunction()">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Front Section -->
+
+        <div class="front-img">
+            <div class="front-hook">
+                <div style="font-size: 50px; font-weight:500;">EnsayBread!</div>
+                <div style="font-size: 15px"> The Answer to your lonely soul</div>
+                <div class="order-button"><a href="#contact">Order Now</a></div>
+            </div>
+            
+        </div>
+
+        <!-- Bread Section -->
+        <div class="sectionBread" id="bread">
+            <div class="headingTitle">Bread</div>
+            <div class="breadContainer">
+                <div class="bread">
+                    <div class="bread-1 bread-img"></div>
+                    <div class="breadContent">Original Ensaymada</div>
+                    <div class="breadContent-desc">The OG Ensaymada has been around for 100 years. The Origin came from Spain and had been adopted to Philippines. Right now, the original Ensaymada is very popular to all filipino.</div>
+                </div>
+                <div class="bread">
+                    <div class="bread-2 bread-img"></div>
+                    <div class="breadContent">Cheese Ensaymada</div>
+                    <div class="breadContent-desc">The Original Ensaymada had evolved into Cheese Ensaymada that has a very rich flavor. The evolution came from Pampanga, and its features a very rich dough with layers of butter and cheese.</div>
+                </div>
+                <div class="bread">
+                    <div class="bread-3 bread-img"></div>
+                    <div class="breadContent">Classic Ensaymada</div>
+                    <div class="breadContent-desc">The Classic Ensaymada is a rework from Original Ensaymada with addtional layered of cheese on the top.  The ingredients and preparation of the Classic Ensaimada evolved into something richer, more extravagant.</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Story-->
+        <div class="sectionStory" id="story">
+            <div class="headingTitle">EnsayBread Story</div>
+            <div class="storyContainer">
+                <div class="storyImg"></div>
+                <div class="storyContent">
+                    <h3>Ensaymada In Victoria BC</h3>
+                    Rolando Pacho, the founder of EnsayBread, established a bakery in Victoria BC Canada. He wanted to spread the his passion and love of ensaymada to the world. 
+                    The ensaimada is a pastry product from Mallorca, Balearic Islands, Spain. It is a common cuisine eaten in Southwestern Europe, Latin America and Southeast Asia 
+                    (mainly the Philippines). The first written references to the Mallorcan ensaïmada date back to the 17th century. At that time, 
+                    although wheat flour was mainly used for making bread, there is evidence that this typical pastry product was made for festivals and celebrations.
+                    The ensaïmada de Mallorca is made with strong flour, water, sugar, eggs, mother dough and a kind of reduced pork lard named saïm. 
+                    The handmade character of the product makes it difficult to give an exact formula, so scales have been established defining the proportion of each ingredient, 
+                    giving rise to an excellent quality traditional product. The name comes from the Catalan word saïm, which means 'pork lard' (from the Arabic shahim, meaning 'fat').
+                    In Mallorca and Ibiza there is a sweet called greixonera made with ensaïmada pieces left over from the day before.
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionContact" id="contact">
+            <div class="headingTitle">Contact Us</div>
+            <div class="contactContainer">
+                <div class="contactText">Email: <input type="text" size="20"></div>
+                <div class="contactText">Phone: <input type="text" size="20"></div>
+                <div class="contactText">Message: </div><textarea cols="50" rows="10"></textarea>
+                <div><button class="contactSubmit">Submit</button></div>
+            </div>
+            
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+body{
+    /* background-color: rgb(245, 171, 92); */
+    margin: 0;
+    height: 100vh;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background: rgb(252,158,0);
+background: linear-gradient(41deg, rgba(252,158,0,1) 0%, rgba(249,240,9,0.604079131652661) 84%);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Background of the front image in the front section*/
+.front-img{
+    background-image: url("images/softbread.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+/* The content of the front section */
+.front-hook{
+    padding-top: 50px;
+    color: white;
+}
+ /* Order button of the front section  */
+.order-button{
+    padding: 20px;
+}
+ /* Order button style */
+.order-button a{
+    font-size: 17px;
+    background-color: orange;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border:none;
+}
+ /* Change the background color of the order button when mouse hover  */
+.order-button a:hover{
+    background-color: rgb(136, 76, 1);
+}
+
+.headingTitle{
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(65, 51, 29);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sectionBread{
+    padding: 100px 0px;
+    background-image: url("images/rosemarybread.jpeg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.breadContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 100px;
+    align-items: center;
+    
+}
+
+.bread{
+    height: 400px;
+    width: 350px;
+    margin: 10px;
+}
+
+.bread-img{
+    width: 300px;
+    height: 250px;
+    background-position: center;
+    /* background-size: cover; */
+    margin: auto;
+}
+
+.bread-img:hover{
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.bread-1{
+    background-image: url("images/original.jpeg");
+}
+
+.bread-2{
+    background-image: url("images/ensaymada.jpeg");
+
+}
+
+.bread-3{
+    background-image: url("images/classic.jpeg");
+}
+
+.breadContent{
+    padding-top: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+
+.breadContent-desc{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.612);
+}
+
+@media screen and (max-width: 600px) {
+    .breadContainer{ flex-direction: column;}
+}
+.sectionStory{
+    padding: 100px 0px;
+}
+.storyContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.storyContent{
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+}
+.storyImg{
+    background-image: url("images/victoria.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .storyContainer{ flex-direction: column;}
+}
+.sectionContact{
+    
+}
+
+.contactContainer{
+    background-color: rgb(45, 45, 45, 0.5);
+    padding: 120px 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.contactSubmit{
+    background-color: rgb(249, 163, 4);
+    border:none;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.contactSubmit:hover{
+    background-color: rgb(70, 46, 2);
+}
