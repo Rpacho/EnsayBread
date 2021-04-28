@@ -109,10 +109,10 @@ background: linear-gradient(41deg, rgba(252,158,0,1) 0%, rgba(249,240,9,0.604079
 }
 .breadContainer{
     display: flex;
-    justify-content: center;
     flex-direction: row;
     margin-bottom: 100px;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -172,11 +172,13 @@ background: linear-gradient(41deg, rgba(252,158,0,1) 0%, rgba(249,240,9,0.604079
 .storyContainer{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     
 }
 .storyContent{
     height: 400px;
-    width: 500px;
+    width: 330px;
     margin: 20px;
 }
 .storyImg{
@@ -184,7 +186,7 @@ background: linear-gradient(41deg, rgba(252,158,0,1) 0%, rgba(249,240,9,0.604079
     background-position: center;
     background-size: cover;
     height: 400px;
-    width: 500px;
+    width: 330px;
     margin: 20px;
 }
 
